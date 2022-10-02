@@ -11,21 +11,21 @@ window.onload = () => {
         }
 
         // 2
-        section.forEach(sec =>{
+        section.forEach(sec => {
 
             let top = window.scrollY;
             let height = sec.offsetHeight;
             let offset = sec.offsetTop - 150;
             let id = sec.getAttribute('id');
-        
-            if(top >= offset && top < offset + height){
-              navLinks.forEach(links =>{
-                links.classList.remove('active');
-                document.querySelector('.navbar a[href*='+id+']').classList.add('active');
-              });
+
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector('.navbar ul li a[href*=' + id + ']').classList.add('active');
+                });
             };
-        
-          });
+
+        });
     };
 
     //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
