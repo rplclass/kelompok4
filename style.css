@@ -34,6 +34,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow: hidden;
 }
 
 html {
@@ -114,8 +115,8 @@ section .container {
 /* home */
 
 #home {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -269,7 +270,6 @@ section .container {
     font-family: 'Nunito', sans-serif;
     transition: all 0.3s ease;
     /* box-shadow: var(--box-shadow); */
-
     /* display: none; */
 }
 
@@ -278,6 +278,8 @@ section .container {
     box-shadow: var(--box-shadow);
     background-color: white;
 }
+
+
 /* .navbar.sticky {
     padding: 20px 0;
 } */
@@ -297,20 +299,19 @@ section .container {
     font-size: 25px;
     font-weight: 600;
 }
+
 .navbar.sticky .logo a {
     color: var(--black);
-
 }
 
 .navbar .logo a span {
     color: white;
     transition: all 0.3s ease;
-    
 }
+
 .navbar.sticky .logo a span {
     color: crimson;
 }
-
 
 .navbar .menu li {
     list-style: none;
@@ -327,13 +328,15 @@ section .container {
     padding: 7px 13px;
     transition: color 0.3s ease;
 }
-.navbar.sticky .menu li a{
+
+.navbar.sticky .menu li a {
     color: var(--black);
 }
 
 .navbar .menu li a:hover {
     color: var(--black);
 }
+
 .navbar.sticky .menu li a:hover {
     color: white;
 }
@@ -343,6 +346,7 @@ section .container {
     color: var(--black);
     background: white;
 }
+
 .navbar.sticky li a.active,
 .navbar.sticky li a:hover {
     color: white;
@@ -548,7 +552,7 @@ section .card .price {
     font-family: 'Ubuntu', sans-serif;
     padding: 10px 30px;
     /* /*  */
-    color: white; 
+    color: white;
     background-color: var(--black);
 }
 
